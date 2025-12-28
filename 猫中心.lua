@@ -117,3 +117,23 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://rawscripts.net/raw/Walk-or-Die-Script-75015"))()      
   	end    
 })
+
+local Tab = Window:MakeTab({
+   Name = "Fling Things and People",
+   Icon = "rbxassetid://7733779610",
+   PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "脚本1",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sladostrastnik/TokraScript/refs/heads/main/Loader.luau"))()      
+  	end    
+})
+
+Tab:AddButton({
+	Name = "脚本2",
+	Callback = function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Storgen-hub-188-games-supported-NEW-UI-UPDATE-30721"))()      
+  	end    
+})
