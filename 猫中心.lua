@@ -7,8 +7,6 @@ local Tab = Window:MakeTab({
    PremiumOnly = false
 })
 
-about:AddParagraph("popcat制作")
-
 Tab:AddButton({
 	Name = "缝合脚本请见谅",
 	Callback = function()
