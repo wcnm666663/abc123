@@ -24,7 +24,7 @@ ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
 ImageLabel.Position = UDim2.new(0.5, 0, 0.4, 0)
 ImageLabel.Size = UDim2.new(0, 200, 0, 200)
 ImageLabel.BackgroundTransparency = 1
-ImageLabel.Image = "rbxassetid://128586210657724"
+ImageLabel.Image = "rbxassetid://89889053661629"
 ImageLabel.ImageTransparency = 0
 ImageLabel.ZIndex = 999
 ImageLabel.Parent = Frame
@@ -95,7 +95,7 @@ local Window = Loaded_Main_Lua:CreateWindow({
     Transparent = true,
     SideBarWidth = 200,
     Theme = "Midnight",
-    Icon = "rbxassetid://129260712070622",
+    Icon = "rbxassetid://89889053661629",
     Size = UDim2.fromOffset(300, 270),
 })
 
@@ -140,16 +140,16 @@ ScreenGui:Destroy()
 
 Window:Tag({
     Title = "缝合类脚本 ",
-    Color = Color3.fromHex("#00FFFF"),
+    Color = Color3.fromHex("#10C550"),
 })
 
 local homeTab = Window:Tab({
     Title = "主页区",
-    Icon = "home",
+    Icon = "rbxassetid://89889053661629",
 })
 
 homeTab:Paragraph({
-    Image = "rbxassetid://128586210657724",
+    Image = "rbxassetid://89889053661629",
     Title = "猫中心",
     Buttons = {{
         Callback = function()
@@ -162,9 +162,16 @@ homeTab:Paragraph({
     Desc = "缝合类脚本",
 })
 
+homeTab:Paragraph({
+    Image = "rbxassetid://136497566586362",
+    Title = "",
+    ImageSize = 100,
+    Desc = "",
+})
+
 local homeTab = Window:Tab({
     Title = "其他中心",
-    Icon = "home",
+    Icon = "rbxassetid://89889053661629",
 })
 
 homeTab:Button({
@@ -172,7 +179,7 @@ homeTab:Button({
 loadstring(game:HttpGet("https://pastebin.com/raw/h8nC0fLb", true))()loadstring(game:HttpGet("https://raw.githubusercontent.com/XingFork/Scripts/refs/heads/main/Ohio"))()
     end,
     Title = "xa hub",
-    Icon = "home",
+    Icon = "rbxassetid://89889053661629",
 })
 
 homeTab:Button({
@@ -182,12 +189,26 @@ Script = "全自动翻译"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JsYb666/Item/refs/heads/main/Auto-language"))()
     end,
     Title = "翻译 英文脚本",
-    Icon = "home",
+    Icon = "rbxassetid://89889053661629",
+})
+
+
+local homeTab = Window:Tab({
+    Title = "功能",
+    Icon = "rbxassetid://89889053661629",
+})
+
+homeTab:Button({
+    Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
+    end,
+    Title = "甩飞",
+    Icon = "rbxassetid://89889053661629",
 })
 
 local homeTab = Window:Tab({
     Title = "感染性微笑",
-    Icon = "home",
+    Icon = "rbxassetid://89889053661629",
 })
 
 homeTab:Button({
@@ -195,5 +216,55 @@ homeTab:Button({
 loadstring(game:HttpGet("https://rawscripts.net/raw/Infectious-Smile-CHRISTMAS-God-script-broo-75750"))()
     end,
     Title = "英文 感染性微笑",
-    Icon = "home",
+    Icon = "rbxassetid://89889053661629",
+})
+
+local homeTab = Window:Tab({
+    Title = "doors",
+    Icon = "rbxassetid://89889053661629",
+})
+
+local feedbackSection = homeTab:Section({
+    Title = "物品获取",
+    Opened = true,
+})
+
+feedbackSection:Button({
+    Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/FCSyG6Th"))()
+    end,
+    Title = "十字架",
+    Icon = "rbxassetid://89889053661629",
+})
+
+feedbackSection:Button({
+    Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/4Vsv1Xwn"))()
+    end,
+    Title = "夜视仪",
+    Icon = "rbxassetid://89889053661629",
+})
+
+feedbackSection:Button({
+    Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/u5B1UjGv"))()
+    end,
+    Title = "神圣炸弹 - 不建议使用",
+    Icon = "rbxassetid://89889053661629",
+})
+
+feedbackSection:Button({
+    Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/xHxGDp51"))()
+    end,
+    Title = "吸铁石",
+    Icon = "rbxassetid://89889053661629",
+})
+
+feedbackSection:Button({
+    Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/v2yEJYmu"))()
+    end,
+    Title = "剪刀",
+    Icon = "rbxassetid://89889053661629",
 })
