@@ -201,6 +201,11 @@ local homeTab = Window:Tab({
 homeTab:Button({
     Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
+Loaded_Main_Lua:Notify({
+      Icon = "rbxassetid://89889053661629",
+      Title = "提示",
+      Content = "开启成功",
+})            
     end,
     Title = "甩飞",
     Icon = "rbxassetid://89889053661629",
@@ -209,6 +214,11 @@ loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
 homeTab:Button({
     Callback = function()
     loadstring(game:HttpGet("https://pastebin.com/raw/arzRCgwS"))()
+Loaded_Main_Lua:Notify({
+      Icon = "rbxassetid://89889053661629",
+      Title = "提示",
+      Content = "开启成功",
+})            
     end,
     Title = "HUA 光影",
     Icon = "rbxassetid://89889053661629",
@@ -217,6 +227,11 @@ homeTab:Button({
 homeTab:Button({
     Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
+Loaded_Main_Lua:Notify({
+      Icon = "rbxassetid://89889053661629",
+      Title = "提示",
+      Content = "开启成功",
+})            
     end,
     Title = "光影_2",
     Icon = "rbxassetid://89889053661629",
@@ -225,6 +240,11 @@ homeTab:Button({
 homeTab:Button({
     Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
+Loaded_Main_Lua:Notify({
+      Icon = "rbxassetid://89889053661629",
+      Title = "提示",
+      Content = "开启成功",
+})            
     end,
     Title = "超高画质",
     Icon = "rbxassetid://89889053661629",
@@ -233,6 +253,11 @@ loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
 homeTab:Button({
     Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
+Loaded_Main_Lua:Notify({
+      Icon = "rbxassetid://89889053661629",
+      Title = "提示",
+      Content = "开启成功",
+})            
     end,
     Title = "无限跳",
     Icon = "rbxassetid://89889053661629",
