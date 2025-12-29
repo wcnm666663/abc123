@@ -140,7 +140,7 @@ ScreenGui:Destroy()
 
 Window:Tag({
     Title = "缝合类脚本 ",
-    Color = Color3.fromHex("#10C550"),
+    Color = Color3.fromHex("#00FFFF"),
 })
 
 local homeTab = Window:Tab({
