@@ -1,4 +1,4 @@
-local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/v9Pdp6kx"))()
+local OrionLib = loadstring(game:HttpGet("https://github.com/wsomoQaz/wsomoQaz/blob/main/Xcccc"))()
 local Window = OrionLib:MakeWindow({Name = "猫中心", HidePremium = false, SaveConfig = true,IntroText = "欢迎使用猫中心", ConfigFolder = "欢迎使用猫中心"})
 
 local Tab = Window:MakeTab({
