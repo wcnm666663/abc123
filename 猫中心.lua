@@ -206,6 +206,38 @@ loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
     Icon = "rbxassetid://89889053661629",
 })
 
+homeTab:Button({
+    Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/arzRCgwS"))()
+    end,
+    Title = "HUA 光影",
+    Icon = "rbxassetid://89889053661629",
+})
+
+homeTab:Button({
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
+    end,
+    Title = "光影_2",
+    Icon = "rbxassetid://89889053661629",
+})
+
+homeTab:Button({
+    Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
+    end,
+    Title = "超高画质",
+    Icon = "rbxassetid://89889053661629",
+})
+
+homeTab:Button({
+    Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
+    end,
+    Title = "无限跳",
+    Icon = "rbxassetid://89889053661629",
+})
+
 local homeTab = Window:Tab({
     Title = "感染性微笑",
     Icon = "rbxassetid://89889053661629",
@@ -267,4 +299,25 @@ feedbackSection:Button({
     end,
     Title = "剪刀",
     Icon = "rbxassetid://89889053661629",
+})
+
+local uiSettingsTab = Window:Tab({
+    Title = "UI设置",
+    Icon = "rbxassetid://89889053661629",
+})
+
+uiSettingsTab:Dropdown({
+    Value = "午夜",
+    Callback = function(value)
+        Loaded_Main_Lua:SetTheme(value)
+    end,
+    Title = "选择主题",
+    Values = {"深色", "浅色", "玫瑰", "植物", "红色", "靛蓝", "天空", "紫罗兰", "琥珀", "翠绿", "午夜", "深红", "MonokaiPro", "棉花糖", "彩虹"},
+})
+
+uiSettingsTab:Button({
+    Title = "销毁窗口",
+    Callback = function()
+        Window:Destroy()
+    end,
 })
