@@ -178,8 +178,8 @@ homeTab:Button({
     Callback = function()
 for _, TX in workspace.GameSystem.Loots.World:getChildren() do --循环
 local h = Instance.new("Highlight") --创建新的gui
-h.FillColor = Color3.new(1,0,0) --颜色
-h.FillTransparency = 0.9 --透明度
+h.FillColor = Color3.new(0,255,0) --颜色
+h.FillTransparency = 0.5 --透明度
 h.Parent = TX --刚刚的TX量值
 end
 
@@ -199,8 +199,8 @@ homeTab:Button({
     Callback = function()
 for _, TX in workspace.GameSystem.InteractiveItem:getChildren() do --循环
 local h = Instance.new("Highlight") --创建新的gui
-h.FillColor = Color3.new(1,0,0) --颜色
-h.FillTransparency = 0.9 --透明度
+h.FillColor = Color3.new(0,140,255) --颜色
+h.FillTransparency = 0.5 --透明度
 h.Parent = TX --刚刚的TX量值
 end
             Loaded_Main_Lua:Notify({
@@ -219,7 +219,7 @@ homeTab:Button({
 for _, TX in workspace.GameSystem.Monsters:getChildren() do --循环
 local h = Instance.new("Highlight") --创建新的gui
 h.FillColor = Color3.new(1,0,0) --颜色
-h.FillTransparency = 0.9 --透明度
+h.FillTransparency = 0.5 --透明度
 h.Parent = TX --刚刚的TX量值
 end
             Loaded_Main_Lua:Notify({
