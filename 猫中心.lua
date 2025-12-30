@@ -326,6 +326,20 @@ feedbackSection:Button({
     Icon = "rbxassetid://89889053661629",
 })
 
+local homeTab = Window:Tab({
+    Title = "死亡速递",
+    Icon = "rbxassetid://89889053661629",
+})
+
+homeTab:Button({
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/wcnm666663/abc123/refs/heads/main/%E6%AD%BB%E4%BA%A1%E9%80%9F%E9%80%92"))()
+            Window:Destroy()
+    end,
+    Title = "死亡速递 - popcat",
+    Icon = "rbxassetid://89889053661629",
+})
+
 local uiSettingsTab = Window:Tab({
     Title = "UI设置",
     Icon = "rbxassetid://89889053661629",
