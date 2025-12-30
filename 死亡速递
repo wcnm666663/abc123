@@ -171,7 +171,7 @@ homeTab:Paragraph({
     Image = "rbxassetid://89889053661629",
     Title = "透视",
     ImageSize = 68,
-    Desc = "我刚学会透视可能会有一点小差错",
+    Desc = "我刚学会透视可能会有一点小差错 电梯每下一层，每开启一次",
 })
 
 homeTab:Button({
@@ -211,5 +211,24 @@ end
             })
     end,
     Title = "透视柜子/箱子",
+    Icon = "rbxassetid://89889053661629",
+})
+
+homeTab:Button({
+    Callback = function()
+for _, TX in workspace.GameSystem.Monsters:getChildren() do --循环
+local h = Instance.new("Highlight") --创建新的gui
+h.FillColor = Color3.new(1,0,0) --颜色
+h.FillTransparency = 0.9 --透明度
+h.Parent = TX --刚刚的TX量值
+end
+            Loaded_Main_Lua:Notify({
+                Icon = "check",
+                Duration = 3,
+                Title = "提示",
+                Content = "开启成功",
+            })
+    end,
+    Title = "透视怪物",
     Icon = "rbxassetid://89889053661629",
 })
