@@ -263,6 +263,19 @@ Loaded_Main_Lua:Notify({
     Icon = "rbxassetid://89889053661629",
 })
 
+homeTab:Button({
+    Callback = function()
+workspace.Live.Player["Left Leg"].Transparency = 1
+Loaded_Main_Lua:Notify({
+      Icon = "rbxassetid://89889053661629",
+      Title = "提示",
+      Content = "开启成功",
+})            
+    end,
+    Title = "无限跳",
+    Icon = "rbxassetid://89889053661629",
+})
+
 local homeTab = Window:Tab({
     Title = "感染性微笑",
     Icon = "rbxassetid://89889053661629",
