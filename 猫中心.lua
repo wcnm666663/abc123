@@ -291,55 +291,6 @@ Loaded_Main_Lua:Notify({
     Icon = "rbxassetid://89889053661629",
 })
 
-local homeTab = Window:Tab({
-    Title = "doors",
-    Icon = "rbxassetid://89889053661629",
-})
-
-local feedbackSection = homeTab:Section({
-    Title = "物品获取",
-    Opened = true,
-})
-
-feedbackSection:Button({
-    Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/FCSyG6Th"))()
-    end,
-    Title = "十字架",
-    Icon = "rbxassetid://89889053661629",
-})
-
-feedbackSection:Button({
-    Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/4Vsv1Xwn"))()
-    end,
-    Title = "夜视仪",
-    Icon = "rbxassetid://89889053661629",
-})
-
-feedbackSection:Button({
-    Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/u5B1UjGv"))()
-    end,
-    Title = "神圣炸弹 - 不建议使用",
-    Icon = "rbxassetid://89889053661629",
-})
-
-feedbackSection:Button({
-    Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/xHxGDp51"))()
-    end,
-    Title = "吸铁石",
-    Icon = "rbxassetid://89889053661629",
-})
-
-feedbackSection:Button({
-    Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/v2yEJYmu"))()
-    end,
-    Title = "剪刀",
-    Icon = "rbxassetid://89889053661629",
-})
 
 local homeTab = Window:Tab({
     Title = "死亡速递",
@@ -353,25 +304,4 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/wcnm666663/abc123/ref
     end,
     Title = "死亡速递 - popcat",
     Icon = "rbxassetid://89889053661629",
-})
-
-local uiSettingsTab = Window:Tab({
-    Title = "UI设置",
-    Icon = "rbxassetid://89889053661629",
-})
-
-uiSettingsTab:Dropdown({
-    Value = "午夜",
-    Callback = function(value)
-        Loaded_Main_Lua:SetTheme(value)
-    end,
-    Title = "选择主题",
-    Values = {"深色", "浅色", "玫瑰", "植物", "红色", "靛蓝", "天空", "紫罗兰", "琥珀", "翠绿", "午夜", "深红", "MonokaiPro", "棉花糖", "彩虹"},
-})
-
-uiSettingsTab:Button({
-    Title = "销毁窗口",
-    Callback = function()
-        Window:Destroy()
-    end,
 })
