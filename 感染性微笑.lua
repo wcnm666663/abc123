@@ -176,6 +176,22 @@ game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Tool"):W
 game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Tool"):WaitForChild("Handle").Transparency = 1
         end
     })               
+    
+   Sectionhh:Button({
+        Title = "自动拾取主武器 - 规定范围内",
+        Color = Color3.fromHex("#305dff"), -- 按钮颜色：深蓝色
+        Icon = "", -- 隐藏图标
+        Callback = function()
+local toolsq = 0        
+while toolsq == 0 do
+local detector = workspace.Map.HumanBase.Vendor.BatCollection.ClickDetector
+local detecto = workspace.Map.ConstantTerrain.BatCollection.ClickDetector
+fireclickdetector(detector)
+fireclickdetector(detecto)
+task.wait(1)
+end
+        end
+    })                   
 
 
 local homeTab = Window:Tab({ --创建选择栏
